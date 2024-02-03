@@ -10,6 +10,12 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
+If Exists(Select * from Product)
+      truncate table Product;
+
     Insert into Product ([Id], [Name], [Cost], [Color], [Description]) 
-Values(1, 'Laptop', 100, 'Blue', 'Work laptop')
+		Values(1, 'Laptop', 100, 'Blue', 'Work laptop')
+
+	Insert into Product ([Id], [Name], [Cost], [Color], [Description]) 
+		Values(2, 'Laptop', 500, 'Black', 'Personal laptop')
 GO
