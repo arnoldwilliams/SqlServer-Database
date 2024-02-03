@@ -20,5 +20,5 @@ If Exists(Select * from Product)
 		Values(2, 'Laptop', 500, 'Black', 'Personal laptop')
 
 	Insert into Product ([Id], [Name], [Cost], [Color], [Description]) 
-		Values(2, 'Desktop PC', 1000, 'Black', 'Gaming laptop')
+		Values(3, 'Desktop PC', 1000, 'Black', 'Gaming laptop')
 GO
